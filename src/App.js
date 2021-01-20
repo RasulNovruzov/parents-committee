@@ -161,7 +161,7 @@ function App() {
                       <Row>
                         <Col lg={9}>
                           <img src={kalendar} />
-                            Период: год
+                            Период: год 
                           </Col>
                         <Col>
                         </Col>
