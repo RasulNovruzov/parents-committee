@@ -47,3 +47,50 @@ body {
     padding: 30px;
 
 }
+
+.leftside {
+}
+
+.rightside {
+    background-color: yellow;
+}
+
+.budget {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+.rasxodi {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;   
+}
+.secondrow{
+    margin-top: 15px;
+}
+
+.balans_v_budjete {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;   
+}
+
+.rasxodi_na_meropriyatiya {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;   
+}
+
+.meropriyatiya {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;    
+}
+
+.balans_na_pitanii {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;  
+}
