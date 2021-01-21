@@ -21,16 +21,16 @@ import meropriyatie from '../../assets/leftside-img/meropriyatie.png'
 const Side = props => {
     return (
         <div className={s.all}>
-            <h3>Родительский комитет <span>.</span></h3>
+            <h3>Родительский комитет<span>.</span></h3>
 
             <Container className={s.schooldiv}>
+                <p className={s.school_parag}>МБОУ СОШ № 316</p>
                 <Row>
                     <Col lg={3}>
                         <img src={school} alt="" />
                     </Col>
-                    <Col lg={6}>
-                        <p className={s.school_parag}>МБОУ СОШ № 316</p>
-                        <p>5 «‎Б» </p>
+                    <Col lg={5}>
+                        <p className={s.classfont}>5 «‎Б»</p>
                     </Col>
                     <Col lg={3}>
                         <button className="btnclick">
@@ -38,10 +38,11 @@ const Side = props => {
                         </button>
                     </Col>
                 </Row>
+                <p className={s.classdown}>Класс</p>
             </Container>
 
-            <ListGroup variant="flush">
-                <ListGroup.Item action >
+            <ListGroup variant="flush" className={s.menuleft}>
+                <ListGroup.Item action>
                     <img src={main} />
                      Главная
                   </ListGroup.Item>
@@ -93,9 +94,9 @@ const Side = props => {
                         <img src={icon} alt="" />
                     </Col>
                     <Col lg={7}>
-                        <p className={s.school_parag}>МБДОУ Детский сад «Единорог»</p>
-                        {/* <p>5 «‎Б» </p>
-                        <p>Класс</p> */}
+                        <p className={s.school_parag}>МБДОУ Детский сад «Единорог» <br/>
+                        <span className={s.classfont}>Семицветики</span><br/>
+                        Группа</p>
                     </Col>
                     <Col>
                         <img src={btn} />
@@ -104,7 +105,7 @@ const Side = props => {
             </Container>
 
 
-            <Container className="">
+            <Container>
                 <button className={s.btn_version}>
                     <img src={v} />
                     Версия 2.1</button>

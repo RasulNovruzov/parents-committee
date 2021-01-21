@@ -1,6 +1,7 @@
 body {
     background-color: #F4F5F8;
-    padding-right: 20px;
+    padding-right: 1.25em;
+    font-family:  'Montserrat', sans-serif;;
 }
 
 .container-1 {
@@ -10,16 +11,16 @@ body {
 }
 
 .container-1 input#search {
-    width: 200px;
-    height: 50px;
+    width: 16.5em;
+    height: 3.125em;
     border: none;
-    font-size: 16px;
+    font-size: 1em;
     float: left;
     color: #262626;
-    padding-left: 45px;
+    padding-left: 2.8125em;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    border-radius: 30px;
+    border-radius: 1.875em;
     -webkit-transition: all .55s ease;
     -moz-transition: all .55s ease;
     -ms-transition: all .55s ease;
@@ -30,33 +31,45 @@ body {
 .container-1 .icon {
     position: absolute;
     top: -4px;
-    margin-left: 17px;
-    margin-top: 17px;
+    margin-left: 1.0625em;
+    margin-top: 1.0625em;
     z-index: 1;
     color: #4f5b66;
 }
 
 .notification {
     background-color: white;
-    padding: 15px 0px 15px 10px;
-    border-radius: 650px;
+    padding: 0.9375em 0em 0.9375em 0.625em;
+    border-radius: 40.625em;
     text-align: center;
 }
 
 .all {
-    padding: 30px;
+    padding: 1.875em;
 }
 
 .budget {
     background-color: white;
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 1.25em;
+    padding: 1.25em;
+}
+
+h3 {
+    font-weight:900;
+}
+
+.vorall:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.vorall:hover h3{
+    color: blue;
+
 }
 
 .rasxodi {
     background-color: white;
-    border-radius: 20px;
-    padding: 20px;   
+    border-radius: 1.25em;
+    padding: 1.25em;   
 }
 .secondrow{
     margin-top: 15px;
@@ -64,32 +77,32 @@ body {
 
 .balans_v_budjete {
     background-color: white;
-    border-radius: 20px;
-    padding: 20px;   
+    border-radius: 1.25em;
+    padding: 1.25em;   
 }
 
 .rasxodi_na_meropriyatiya {
     background-color: white;
-    border-radius: 20px;
-    padding: 20px;   
+    border-radius: 1.25em;
+    padding: 1.25em;   
 }
 
 .meropriyatiya {
     background-color: white;
-    border-radius: 20px;
-    padding: 20px;    
+    border-radius: 1.25em;
+    padding: 1.25em;    
 }
 
 .balans_na_pitanii {
     background-color: white;
-    border-radius: 20px;
-    padding: 20px;  
+    border-radius: 1.25em;
+    padding: 1.25em;  
 }
 
 .qolosovanie {
     background-color: white;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 1.25em;
+    border-radius: 1.25em;
     margin-top: 10px;
 }
 
@@ -99,12 +112,12 @@ body {
     border-color: transparent;
     width: 100%;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 0.85em;
 }
 
 .progress {
     height: 5px;
-    margin-top: 20px;
+    margin-top: 1.25em;
     margin-bottom: 10px;
 }
 
@@ -129,12 +142,14 @@ span {
 
 .kalendar {
     background-color: white;
-    border-radius: 20px;
-    padding: 20px;
+    border-top-left-radius: 1.25em;
+    border-top-right-radius: 1.25em;
+    padding: 1.25em;
 }
 
 .rightfont {
-    font-weight: 700;
+    font-weight: 900;
+    margin-bottom: 1em;
 }
 
 .rightimg {
@@ -149,8 +164,24 @@ span {
     text-align: center;
     width: 100%;
     border-color: transparent;
+    padding: 0.45em;
+    font-weight: 900;
+    border-bottom-left-radius: 1.25em;
+    border-bottom-right-radius: 1.25em;
 }
 
 .lefttop {
-    margin-top: 15px;
+    margin-top: 0.9375em;
+}
+
+.mediafile {
+    background-color: white;
+    border-radius: 1.25em;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.obyem {
+    font-weight: 900;
+    font-size: 1.2em;
 }

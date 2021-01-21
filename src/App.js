@@ -54,7 +54,7 @@ function App() {
               <Col lg={7}>
                 <Row>
                   <Col>
-                    <div className="budget">
+                    <div className="budget vorall">
                       <Row>
                         <Col lg={10}>
                           <h3>Бюджет</h3>
@@ -82,7 +82,7 @@ function App() {
                   </Col>
 
                   <Col>
-                    <div className="rasxodi">
+                    <div className="rasxodi vorall">
                       <Row>
                         <Col lg={10}>
                           <h3>Расходы</h3>
@@ -111,7 +111,7 @@ function App() {
                 </Row>
                 <Row className="secondrow">
                   <Col className="">
-                    <div className="balans_v_budjete">
+                    <div className="balans_v_budjete vorall">
                       <Row>
                         <Col lg={10}>
                           <h3>Баланс <br /> в бюджете</h3>
@@ -139,7 +139,7 @@ function App() {
                   </Col>
 
                   <Col>
-                    <div className="rasxodi_na_meropriyatiya">
+                    <div className="rasxodi_na_meropriyatiya vorall">
                       <Row>
                         <Col lg={10}>
                           <h3>Расходы на мероприятия</h3>
@@ -169,7 +169,7 @@ function App() {
 
                 <Row className="secondrow">
                   <Col>
-                    <div className="meropriyatiya">
+                    <div className="meropriyatiya vorall">
                       <Row>
                         <Col lg={10}>
                           <h3>Мероприятия</h3>
@@ -212,7 +212,7 @@ function App() {
                   </Col>
 
                   <Col>
-                    <div className="balans_na_pitanii">
+                    <div className="balans_na_pitanii vorall">
                       <Row>
                         <Col lg={10}>
                           <h3>Баланс <br /> на питании</h3>
@@ -244,6 +244,17 @@ function App() {
                   <h3>Медиафайлы</h3>
 
                   <h1>Тут загружаются файлы</h1>
+
+                  <Row>
+                    <Col lg={10}>
+                      Объём хранилища
+                    </Col>
+                    <Col>
+                      <span className="obyem">3 из 8 Gb</span>
+                    </Col>
+                  </Row>
+
+                  {progressInstance}
                 </div>
               </Col>
 
@@ -253,7 +264,7 @@ function App() {
 
                   <Row>
                     <Col lg={11}>
-                      <h2 className="rightfont">Календарь мероприятий</h2>
+                      <h3 className="rightfont">Календарь мероприятий</h3>
                     </Col>
                     <Col>
                       <button className="btnclick">
@@ -270,7 +281,7 @@ function App() {
                     <Col lg={1}>
                       <img src={kalendar} />
                     </Col>
-                    <Col lg={9}>
+                    <Col lg={8}>
                       Дата <br />
                       17 января
                     </Col>
@@ -283,9 +294,9 @@ function App() {
                     <Col lg={1}>
                       <img src={vector} />
                     </Col>
-                    <Col lg={9}>
+                    <Col lg={8}>
                       Место
-                  </Col>
+                    </Col>
 
                     <Col>
                       Стоимость
@@ -296,9 +307,8 @@ function App() {
 
                   <p className="users">Уже идут 17 детей</p> <br />
 
-
-                  <button className="allmerop">Все мероприятия</button>
                 </div>
+                <button className="allmerop">Все мероприятия</button>
 
                 <div className="qolosovanie">
                   <h4>Голосование</h4>
@@ -363,7 +373,7 @@ function App() {
                     </Col>
                   </Row>
 
-                  <button className="proqolosovalo">Проголосовало</button>
+                  <button className="proqolosovalo">Проголосовать</button>
                 </div>
               </Col>
             </Row>
