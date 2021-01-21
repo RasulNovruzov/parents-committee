@@ -1,12 +1,17 @@
 import react from 'react'
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, ProgressBar } from "react-bootstrap";
 import logo from './logo.svg';
 import './App.css';
 import Side from './component/Side/Side';
 import notif from './assets/notification.png'
 import messages from './assets/messages.png'
 import budgetbtn from './assets/budgetbtn.png';
-import kalendar from './assets/leftside-img/kalendar.png'
+import kalendar from './assets/leftside-img/kalendar.png';
+import komitet from './assets/komitet.png';
+
+
+const now = 27;
+const progressInstance = <ProgressBar now={now} label={`${now}%`} srOnly />;
 
 function App() {
   return (
@@ -161,7 +166,7 @@ function App() {
                       <Row>
                         <Col lg={9}>
                           <img src={kalendar} />
-                            Период: год 
+                            Период: год
                           </Col>
                         <Col>
                         </Col>
@@ -207,7 +212,107 @@ function App() {
 
 
               <Col lg={5} className="rightside">
-                <h2>Календарь мероприятий</h2>
+                <Row>
+                  <Col lg={10}>
+                    <h2>Календарь мероприятий</h2>
+                  </Col>
+                  <Col>
+                    <img src={budgetbtn} />
+                  </Col>
+                </Row>
+                <h5>Поход в музей геологии</h5>
+                <p>Поход увлекательное путишествие в музей геологии. Неовобращимые впеатления и буря эмоций.</p>
+
+                <img src={komitet} />
+
+                <Row>
+                  <Col lg={10}>
+                    Дата
+                  </Col>
+                  <Col>
+                    Время
+                  </Col>
+                </Row>
+
+                <Row>
+                  <Col lg={10}>
+                    Место
+                  </Col>
+
+                  <Col>
+                    Стоимость
+                  </Col>
+                </Row>
+
+                Уже идут 17 детей <br />
+
+                Все мероприятий
+
+                <div className="qolosovanie">
+                  <h4>Голосование</h4>
+                  <p>Поход в музей Природы и человека</p>
+                  {progressInstance}
+                  <Row>
+                    <Col lg={10}>
+                      6 голосов
+                    </Col>
+                    <Col>
+                      27%
+                    </Col>
+                  </Row>
+                  <hr />
+
+
+                  <p>Поход в музей Природы и человека</p>
+                  {progressInstance}
+                  <Row>
+                    <Col lg={10}>
+                      6 голосов
+                    </Col>
+                    <Col>
+                      27%
+                    </Col>
+                  </Row>
+                  <hr />
+
+
+                  <p>Поход в музей Природы и человека</p>
+                  {progressInstance}
+                  <Row>
+                    <Col lg={10}>
+                      6 голосов
+                    </Col>
+                    <Col>
+                      27%
+                    </Col>
+                  </Row>
+                  <hr />
+
+
+                  <p>Поход в музей Природы и человека</p>
+                  {progressInstance}
+                  <Row>
+                    <Col lg={10}>
+                      6 голосов
+                    </Col>
+                    <Col>
+                      27%
+                    </Col>
+                  </Row>
+                  <hr />
+
+                  <Row>
+                    <Col lg={10}>
+                      Проголосовало
+                    </Col>
+
+                    <Col>
+                      29 из 30
+                    </Col>
+                  </Row>
+
+                  <button className="proqolosovalo">Проголосовало</button>
+                </div>
               </Col>
             </Row>
 

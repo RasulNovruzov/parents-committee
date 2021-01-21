@@ -52,7 +52,7 @@ body {
 }
 
 .rightside {
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .budget {
@@ -93,4 +93,20 @@ body {
     background-color: white;
     border-radius: 20px;
     padding: 20px;  
+}
+
+.qolosovanie {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.proqolosovalo {
+    background-color: #0968FF;
+    color: white;
+    border-color: transparent;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
 }
