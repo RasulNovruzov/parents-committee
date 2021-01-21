@@ -1,5 +1,6 @@
 body {
     background-color: #F4F5F8;
+    padding-right: 20px;
 }
 
 .container-1 {
@@ -35,7 +36,6 @@ body {
     color: #4f5b66;
 }
 
-
 .notification {
     background-color: white;
     padding: 15px 0px 15px 10px;
@@ -45,21 +45,12 @@ body {
 
 .all {
     padding: 30px;
-
-}
-
-.leftside {
-}
-
-.rightside {
-    /* background-color: yellow; */
 }
 
 .budget {
     background-color: white;
     border-radius: 20px;
     padding: 20px;
-
 }
 
 .rasxodi {
@@ -97,10 +88,10 @@ body {
 
 .qolosovanie {
     background-color: white;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
+    margin-top: 10px;
 }
-
 
 .proqolosovalo {
     background-color: #0968FF;
@@ -109,4 +100,57 @@ body {
     width: 100%;
     padding: 10px;
     border-radius: 20px;
+}
+
+.progress {
+    height: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+span {
+    font-weight: 700;
+}
+
+.meromriyatiyaimg {
+    width: 30px;
+    margin-top: 10px; 
+}
+
+.meromriyatiyafont {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.btnclick {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.kalendar {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.rightfont {
+    font-weight: 700;
+}
+
+.rightimg {
+    width: 100%;
+}
+
+.users {
+    text-align: center;   
+}
+
+.allmerop {
+    text-align: center;
+    width: 100%;
+    border-color: transparent;
+}
+
+.lefttop {
+    margin-top: 15px;
 }

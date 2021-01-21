@@ -23,19 +23,19 @@ const Side = props => {
         <div className={s.all}>
             <h3>Родительский комитет <span>.</span></h3>
 
-
             <Container className={s.schooldiv}>
                 <Row>
-                    <Col>
+                    <Col lg={3}>
                         <img src={school} alt="" />
                     </Col>
-                    <Col>
+                    <Col lg={6}>
                         <p className={s.school_parag}>МБОУ СОШ № 316</p>
-                        {/* <p>5 «‎Б» </p>
-                        <p>Класс</p> */}
+                        <p>5 «‎Б» </p>
                     </Col>
-                    <Col>
-                        <img src={btn} />
+                    <Col lg={3}>
+                        <button className="btnclick">
+                            <img src={btn} />
+                        </button>
                     </Col>
                 </Row>
             </Container>

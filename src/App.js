@@ -8,15 +8,24 @@ import messages from './assets/messages.png'
 import budgetbtn from './assets/budgetbtn.png';
 import kalendar from './assets/leftside-img/kalendar.png';
 import komitet from './assets/komitet.png';
-
+import birthday from './assets/birthday.png'
+import priz from './assets/priz.png'
+import ru from './assets/ru.png'
+import vector from './assets/Vector.png';
 
 const now = 27;
 const progressInstance = <ProgressBar now={now} label={`${now}%`} srOnly />;
 
+const percent = 0;
+const progressBar = <ProgressBar className="progress" percent={percent} label={`${percent}%`} srOnly />;
+
+const percent2 = 100;
+const progressBar2 = <ProgressBar now={percent2} srOnly />;
+
 function App() {
   return (
     <div className="App">
-      <Container fluid>
+      <>
         <Row>
           <Col sm={2}>
             <Side />
@@ -41,8 +50,8 @@ function App() {
               </Col>
             </Row>
 
-            <Row>
-              <Col lg={7} className="leftside">
+            <Row className="lefttop">
+              <Col lg={7}>
                 <Row>
                   <Col>
                     <div className="budget">
@@ -51,21 +60,23 @@ function App() {
                           <h3>Бюджет</h3>
                         </Col>
                         <Col>
-                          <img src={budgetbtn} />
+                          <button className="btnclick">
+                            <img src={budgetbtn} />
+                          </button>
                         </Col>
                       </Row>
                       <h2>63 000,000 R</h2>
 
-                      <hr />
+                      {progressBar2}
 
                       <Row>
                         <Col lg={9}>
                           <img src={kalendar} />
-                            Период: год
+                          <span>Период</span>: год
                           </Col>
                         <Col>
-                          100%
-                          </Col>
+                          <span>100%</span>
+                        </Col>
                       </Row>
                     </div>
                   </Col>
@@ -77,20 +88,22 @@ function App() {
                           <h3>Расходы</h3>
                         </Col>
                         <Col>
-                          <img src={budgetbtn} />
+                          <button className="btnclick">
+                            <img src={budgetbtn} />
+                          </button>
                         </Col>
                       </Row>
                       <h2>0,00 R</h2>
 
-                      <hr />
+                      {progressBar}
 
                       <Row>
                         <Col lg={10}>
                           <img src={kalendar} />
-                            Период: месяц
+                          <span>Период</span>: месяц
                           </Col>
                         <Col>
-                          0%
+                          <span>0%</span>
                         </Col>
                       </Row>
                     </div>
@@ -104,21 +117,23 @@ function App() {
                           <h3>Баланс <br /> в бюджете</h3>
                         </Col>
                         <Col>
-                          <img src={budgetbtn} />
+                          <button className="btnclick">
+                            <img src={budgetbtn} />
+                          </button>
                         </Col>
                       </Row>
                       <h2>1 500,00 R</h2>
 
-                      <hr />
+                      {progressBar}
 
                       <Row>
                         <Col lg={10}>
                           <img src={kalendar} />
-                            Период: год
+                          <span>Период</span>: месяц
                           </Col>
                         <Col>
-                          0%
-                          </Col>
+                          <span>0%</span>
+                        </Col>
                       </Row>
                     </div>
                   </Col>
@@ -130,21 +145,23 @@ function App() {
                           <h3>Расходы на мероприятия</h3>
                         </Col>
                         <Col>
-                          <img src={budgetbtn} />
+                          <button className="btnclick">
+                            <img src={budgetbtn} />
+                          </button>
                         </Col>
                       </Row>
                       <h2>2 350,00 R</h2>
 
-                      <hr />
+                      {progressBar}
 
                       <Row>
                         <Col lg={10}>
                           <img src={kalendar} />
-                            Период: год
+                          <span>Период</span>: год
                           </Col>
                         <Col>
-                          0%
-                          </Col>
+                          <span>0%</span>
+                        </Col>
                       </Row>
                     </div>
                   </Col>
@@ -158,15 +175,35 @@ function App() {
                           <h3>Мероприятия</h3>
                         </Col>
                         <Col>
-                          <img src={budgetbtn} />
+                          <button className="btnclick">
+                            <img src={budgetbtn} />
+                          </button>
                         </Col>
                       </Row>
-                      <h3>28 дней рождения</h3>
+
+                      <Row>
+                        <Col lg={1}><img src={birthday} className="meromriyatiyaimg" /> </Col>
+                        <Col lg={2} className="meromriyatiyafont">28</Col>
+                        <Col lg={2}>дней рождения</Col>
+                      </Row>
+                      <hr />
+                      <Row>
+                        <Col lg={1}><img src={priz} className="meromriyatiyaimg" /> </Col>
+                        <Col lg={2} className="meromriyatiyafont">28</Col>
+                        <Col lg={2}>организованных мероприятий</Col>
+                      </Row>
+                      <hr />
+                      <Row>
+                        <Col lg={1}><img src={ru} className="meromriyatiyaimg" /> </Col>
+                        <Col lg={2} className="meromriyatiyafont">28</Col>
+                        <Col lg={2}>официальных праздников</Col>
+                      </Row>
+
                       <hr />
                       <Row>
                         <Col lg={9}>
                           <img src={kalendar} />
-                            Период: год
+                          <span>Период</span>: год
                           </Col>
                         <Col>
                         </Col>
@@ -181,21 +218,23 @@ function App() {
                           <h3>Баланс <br /> на питании</h3>
                         </Col>
                         <Col>
-                          <img src={budgetbtn} />
+                          <button className="btnclick">
+                            <img src={budgetbtn} />
+                          </button>
                         </Col>
                       </Row>
                       <h2>500,00 R</h2>
 
-                      <hr />
+                      {progressBar}
 
                       <Row>
                         <Col lg={10}>
                           <img src={kalendar} />
-                            Период: год
+                          <span>Период</span>: год
                           </Col>
                         <Col>
-                          0%
-                          </Col>
+                          <span>0%</span>
+                        </Col>
                       </Row>
                     </div>
                   </Col>
@@ -209,44 +248,57 @@ function App() {
               </Col>
 
 
-
-
               <Col lg={5} className="rightside">
-                <Row>
-                  <Col lg={10}>
-                    <h2>Календарь мероприятий</h2>
-                  </Col>
-                  <Col>
-                    <img src={budgetbtn} />
-                  </Col>
-                </Row>
-                <h5>Поход в музей геологии</h5>
-                <p>Поход увлекательное путишествие в музей геологии. Неовобращимые впеатления и буря эмоций.</p>
+                <div className="kalendar">
 
-                <img src={komitet} />
+                  <Row>
+                    <Col lg={11}>
+                      <h2 className="rightfont">Календарь мероприятий</h2>
+                    </Col>
+                    <Col>
+                      <button className="btnclick">
+                        <img src={budgetbtn} />
+                      </button>
+                    </Col>
+                  </Row>
+                  <h5 className="rightfont">Поход в музей геологии</h5>
+                  <p>Поход увлекательное путишествие в музей геологии. Неовобращимые впеатления и буря эмоций.</p>
 
-                <Row>
-                  <Col lg={10}>
-                    Дата
+                  <img src={komitet} className="rightimg" />
+
+                  <Row>
+                    <Col lg={1}>
+                      <img src={kalendar} />
+                    </Col>
+                    <Col lg={9}>
+                      Дата <br />
+                      17 января
+                    </Col>
+                    <Col>
+                      Время
+                    </Col>
+                  </Row>
+
+                  <Row>
+                    <Col lg={1}>
+                      <img src={vector} />
+                    </Col>
+                    <Col lg={9}>
+                      Место
                   </Col>
-                  <Col>
-                    Время
+
+                    <Col>
+                      Стоимость
+                      <br />
+                      700 R
                   </Col>
-                </Row>
+                  </Row>
 
-                <Row>
-                  <Col lg={10}>
-                    Место
-                  </Col>
+                  <p className="users">Уже идут 17 детей</p> <br />
 
-                  <Col>
-                    Стоимость
-                  </Col>
-                </Row>
 
-                Уже идут 17 детей <br />
-
-                Все мероприятий
+                  <button className="allmerop">Все мероприятия</button>
+                </div>
 
                 <div className="qolosovanie">
                   <h4>Голосование</h4>
@@ -315,10 +367,9 @@ function App() {
                 </div>
               </Col>
             </Row>
-
           </Col>
         </Row>
-      </Container>
+      </>
     </div>
   );
 }
